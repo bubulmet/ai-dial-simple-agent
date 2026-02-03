@@ -12,6 +12,10 @@ from task.tools.users.search_users_tool import SearchUsersTool
 from task.tools.users.update_user_tool import UpdateUserTool
 from task.tools.users.user_client import UserClient
 from task.tools.web_search import WebSearchTool
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 DIAL_ENDPOINT = "https://ai-proxy.lab.epam.com"
 API_KEY = os.getenv('DIAL_API_KEY')
@@ -29,7 +33,8 @@ def main():
     raise NotImplementedError()
 
 
-main()
+if __name__ == "__main__":
+    main()
 
 #TODO:
 # Request sample:
