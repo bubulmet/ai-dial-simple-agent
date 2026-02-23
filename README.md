@@ -56,7 +56,18 @@ pip install -r requirements.txt
 deactivate
 ```
 
-### 3. API Configuration
+### 3. Start Users service:
+   ```bash
+   colima start --cpu 2 --memory 4
+   docker-compose up -d
+   ...
+   docker-compose stop
+   docker-compose down
+   colima stop
+   ```
+   This will start Users service on port 8041.  
+
+### 4. API Configuration
 
 1. **Connect to EPAM VPN** (required for internal API access)
 2. **Obtain DIAL API Key**:
